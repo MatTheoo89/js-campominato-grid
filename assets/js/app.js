@@ -35,5 +35,13 @@ todo 4 - Output
 const buttonPlay = document.querySelector('button'); // collego btn HTML ad variabile
 const container = document.querySelector('.container'); // collego container HTML ad variabile
 const elementForRow = 10; // poi prenderà il dato dalla select
-const nExponent = 2;
+const nExponent = 2; // numero esponente
 //console.log(buttonPlay, elementForRow, nExponent);
+
+
+// metto in ascolto il button per essere premuto
+buttonPlay.addEventListener('click', function(){
+  //console.log('cliccato');
+  container.classList.add('bgc-green');
+})
+

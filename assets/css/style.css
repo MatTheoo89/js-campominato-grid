@@ -45,6 +45,9 @@ button {
   display: flex;
   flex-wrap: wrap;
   /*! debug da rimuovere*/
+}
+
+.bgc-green {
   background-color: #588157;
 }
 
