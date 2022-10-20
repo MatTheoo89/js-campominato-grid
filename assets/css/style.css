@@ -22,7 +22,7 @@ button {
   font-size: 2.3rem;
   font-weight: 900;
   letter-spacing: 4px;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
   padding: 10px 30px;
   background-color: #354f52;
   border: none;
@@ -45,13 +45,13 @@ button {
   display: flex;
   flex-wrap: wrap;
   /*! debug da rimuovere*/
-  background-color: beige;
+  background-color: #588157;
 }
 
 .square {
   width: calc(100% / 10);
   height: calc(100% / 10);
-  border: 2px solid red;
+  border: 2px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
