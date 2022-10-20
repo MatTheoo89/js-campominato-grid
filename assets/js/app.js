@@ -42,8 +42,10 @@ const nExponent = 2; // numero esponente
 // metto in ascolto il button per essere premuto
 buttonPlay.addEventListener('click', function(){
   //console.log('cliccato');
-  container.classList.add('bgc-green');
+  container.classList.add('bgc-green',);
+  buttonPlay.classList.add('hide');
   
+  // richiamo la funzione che genera i quadrati e gli do i parametri
   generateSquare(elementForRow, nExponent);
 
 })
@@ -54,19 +56,23 @@ function generateSquare(elRow, exp) {
   
   // qui risalgo al numero di quanti ne devo stampare in pagina
   let nSquare = Math.pow(elRow, exp)
-  console.log('nSquare', nSquare);
+  //console.log('nSquare', nSquare);
 
 // qui genero fisicamente i quadrati
   for(let i = 0; i < nSquare; i++){
-    console.log(i + 1);
+    //console.log(i + 1);
+    
     // creo elemento div
     let square = document.createElement('div');
+    
     // ci aggiungo la classe css
     square.classList.add('square')
     //console.log(square);
+
+    // ci scrivo dentro il numero
+    square.innerText = i + 1;
     
     // appendo al contenitore fuori da ciclo
     container.append(square);
   }
-
   }
