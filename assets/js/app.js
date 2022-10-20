@@ -87,10 +87,10 @@ function generateSquare(elRow, exp) {
     const squareNum = i + 1;
     //console.log('squareNum-->', squareNum);
     square.idSquare = squareNum;
-    square.addEventListener('mouseover', function(){
+    square.addEventListener('click', function(){
       this.innerHTML = this.idSquare;
       square.classList.add('bgc-yellow');
-      //console.log(this.idSquare);
+      console.log(this.idSquare);
     })
 
     // ci scrivo dentro il numero
