@@ -22,7 +22,7 @@ button {
   font-size: 2.3rem;
   font-weight: 900;
   letter-spacing: 4px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   padding: 10px 30px;
   background-color: #354f52;
   border: none;
@@ -44,7 +44,24 @@ button {
   height: 800px;
   display: flex;
   flex-wrap: wrap;
-  /*! debug da rimuovere*/
+}
+
+.container-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-2 select {
+  margin-bottom: 80px;
+  padding: 10px 50px;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  background-color: #354f52;
+  border: none;
+  border-radius: 10px;
+  color: #cad2c5;
 }
 
 .bgc-green {

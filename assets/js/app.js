@@ -34,7 +34,8 @@ todo 4 - Output
 // DATI PARTENZA
 const buttonPlay = document.querySelector('button'); // collego btn HTML ad variabile
 const container = document.querySelector('.container'); // collego container HTML ad variabile
-const elementForRow = 10; // poi prenderà il dato dalla select
+const inputGame = document.querySelector('.container-2')
+const elementForRow = document.querySelector('select'); // poi prenderà il dato dalla select
 const nExponent = 2; // numero esponente
 //console.log(buttonPlay, elementForRow, nExponent);
 
@@ -43,10 +44,10 @@ const nExponent = 2; // numero esponente
 buttonPlay.addEventListener('click', function(){
   //console.log('cliccato');
   container.classList.add('bgc-green',);
-  buttonPlay.classList.add('hide');
+  inputGame.classList.add('hide');
   
   // richiamo la funzione che genera i quadrati e gli do i parametri
-  generateSquare(elementForRow, nExponent);
+  generateSquare(elementForRow.value, nExponent);
 
 })
 
@@ -81,12 +82,14 @@ function generateSquare(elRow, exp) {
     
     // ci aggiungo la classe css
     square.classList.add('square')
-    //console.log(square);
+    console.log(square);
 
     // creo proprietà custom
     const squareNum = i + 1;
     //console.log('squareNum-->', squareNum);
     square.idSquare = squareNum;
+    square.style.width = `calc(100% / ${elementForRow.value})`;
+    square.style.height = `calc(100% / ${elementForRow.value})`;
     square.addEventListener('click', function(){
       this.innerHTML = this.idSquare;
       square.classList.add('bgc-yellow');
