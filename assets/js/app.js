@@ -43,5 +43,16 @@ const nExponent = 2; // numero esponente
 buttonPlay.addEventListener('click', function(){
   //console.log('cliccato');
   container.classList.add('bgc-green');
+  
+  generateSquare(elementForRow, nExponent);
+
 })
 
+
+// creo una funzione che genera il ciclo per generare e stampare in pagina i quadrati
+function generateSquare(elRow, exp) {
+  
+  let nSquare = Math.pow(elRow, exp)
+  console.log('nSquare', nSquare);
+
+  }
