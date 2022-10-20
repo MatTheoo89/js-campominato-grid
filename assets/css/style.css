@@ -63,3 +63,7 @@ button {
 .hide {
   display: none;
 }
+
+.bgc-yellow {
+  background-color: yellow;
+}

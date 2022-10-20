@@ -51,6 +51,20 @@ buttonPlay.addEventListener('click', function(){
 })
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+// ! ⏬⏬⏬⏬⏬⏬⏬ FUNZIONI ⏬⏬⏬⏬⏬⏬⏬
+
 // creo una funzione che genera il ciclo per generare e stampare in pagina i quadrati
 function generateSquare(elRow, exp) {
   
@@ -69,8 +83,18 @@ function generateSquare(elRow, exp) {
     square.classList.add('square')
     //console.log(square);
 
+    // creo proprietà custom
+    const squareNum = i + 1;
+    //console.log('squareNum-->', squareNum);
+    square.idSquare = squareNum;
+    square.addEventListener('mouseover', function(){
+      this.innerHTML = this.idSquare;
+      square.classList.add('bgc-yellow');
+      //console.log(this.idSquare);
+    })
+
     // ci scrivo dentro il numero
-    square.innerText = i + 1;
+    //square.innerText = i + 1;
     
     // appendo al contenitore fuori da ciclo
     container.append(square);
