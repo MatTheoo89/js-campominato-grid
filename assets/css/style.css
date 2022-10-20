@@ -5,15 +5,30 @@
 }
 
 body {
-  color: whitesmoke;
-  background-color: #181818;
+  color: #cad2c5;
+  background-color: #2f3e46;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h1 {
   text-align: center;
   margin-bottom: 80px;
-  font-size: 3rem;
+  font-size: 4rem;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+button {
+  font-size: 2.3rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+  padding: 10px 30px;
+  background-color: #354f52;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 8px rgba(132, 169, 140, .8);
+  color: #cad2c5;
 }
 
 .main-wrapper {
@@ -27,9 +42,10 @@ h1 {
 .container {
   width: 800px;
   height: 800px;
-  background-color: beige;
   display: flex;
   flex-wrap: wrap;
+  /*! debug da rimuovere*/
+  background-color: beige;
 }
 
 .square {
