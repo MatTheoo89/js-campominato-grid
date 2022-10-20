@@ -8,7 +8,7 @@ Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro e
 */
 
 /*
-todo 1 - Struttura fissa HTML/CSS
+// todo 1 - Struttura fissa HTML/CSS
 todo 2 - creare la griglia dinamicamente
 todo 3 - numerare quadratti
 todo 4 - Output
@@ -17,6 +17,15 @@ todo 4 - Output
 
 /*
 ! 1 - creare griglia dinamicamente
+  ?  quando EVENTO CLICK si genera la griglia di (.SQUARE)
+  
+  CONST Quante volte devo generare square
+  CONST EXponente (per non fare 10x10)
+  * clicco sul btn (EVENTO)
+
+  * creo l'elemento square TANTE VOLTE 
+    CICLO
+
 
 */
 
