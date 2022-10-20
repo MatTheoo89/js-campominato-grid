@@ -52,7 +52,21 @@ buttonPlay.addEventListener('click', function(){
 // creo una funzione che genera il ciclo per generare e stampare in pagina i quadrati
 function generateSquare(elRow, exp) {
   
+  // qui risalgo al numero di quanti ne devo stampare in pagina
   let nSquare = Math.pow(elRow, exp)
   console.log('nSquare', nSquare);
+
+// qui genero fisicamente i quadrati
+  for(let i = 0; i < nSquare; i++){
+    console.log(i + 1);
+    // creo elemento div
+    let square = document.createElement('div');
+    // ci aggiungo la classe css
+    square.classList.add('square')
+    //console.log(square);
+    
+    // appendo al contenitore fuori da ciclo
+    container.append(square);
+  }
 
   }
