@@ -3,3 +3,40 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  color: whitesmoke;
+  background-color: #181818;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 3rem;
+}
+
+.main-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 800px;
+  height: 800px;
+  background-color: beige;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
