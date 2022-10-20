@@ -33,6 +33,7 @@ todo 4 - Output
 
 // DATI PARTENZA
 const buttonPlay = document.querySelector('button'); // collego btn HTML ad variabile
+const btnReset = document.querySelector('#reset')
 const container = document.querySelector('.container'); // collego container HTML ad variabile
 const inputGame = document.querySelector('.container-2')
 const elementForRow = document.querySelector('select'); // poi prenderà il dato dalla select
@@ -45,10 +46,15 @@ buttonPlay.addEventListener('click', function(){
   //console.log('cliccato');
   container.classList.add('bgc-green',);
   inputGame.classList.add('hide');
+  btnReset.classList.remove('hide');
   
   // richiamo la funzione che genera i quadrati e gli do i parametri
   generateSquare(elementForRow.value, nExponent);
 
+})
+
+btnReset.addEventListener('click', function(){
+  window.location.reload()
 })
 
 

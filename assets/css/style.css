@@ -44,6 +44,7 @@ button {
   height: 800px;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 80px;
 }
 
 .container-2 {
